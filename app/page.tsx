@@ -132,10 +132,10 @@ export default function VisitingCard() {
                 >
                   <div className="w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden border-4 border-white/30 shadow-lg relative">
                     <Image
-                      src="https://res.cloudinary.com/dlnwacm5j/image/upload/v1746376687/Bhoopathy_P_aekjng.png"
+                      src="/images/hero.jpg"
                       alt="Ragupathy"
                       fill
-                      className="object-cover"
+                      className="object-cover object-[90%_center]"
                     />
 
                     {/* Animated glow effect on hover */}
@@ -228,7 +228,7 @@ export default function VisitingCard() {
                     transition={{ delay: 0.7, duration: 0.5 }}
                     className="text-sm md:text-base text-center md:text-left text-white/70 italic mb-2"
                   >
-                    "Powering Progress, Securing the Future"
+                    "Trusted experts in Safety"
                   </motion.p>
                 </div>
               </div>
@@ -298,7 +298,7 @@ export default function VisitingCard() {
                   </h3>
                   <div className="flex items-center justify-center mb-4">
                     <Image
-                      src="/webers-building.jpg"
+                      src="https://www.webers.co.in/images/service%20(2).jpg"
                       alt="Webers Office"
                       width={400}
                       height={200}
@@ -313,6 +313,18 @@ export default function VisitingCard() {
                     We pride ourselves on delivering high-quality, reliable solutions tailored to meet the unique needs
                     of our clients across various sectors.
                   </p>
+
+                  {/* Warranty and Standards Section */}
+                  <div className="mt-6 space-y-3">
+                    <div className="flex items-center gap-2 text-[#FF4D4D]">
+                      <Shield className="w-5 h-5" />
+                      <span className="text-sm font-semibold">5 Years On-Site Warranty</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-[#FF4D4D]">
+                      <CheckCircle className="w-5 h-5" />
+                      <span className="text-sm font-semibold">BIS & NEC Standards Compliant Products</span>
+                    </div>
+                  </div>
                 </motion.div>
               )}
 
@@ -333,19 +345,25 @@ export default function VisitingCard() {
                       icon={<Zap className="w-5 h-5 text-[#FF4D4D]" />}
                       title="Electrical Systems"
                       description="Complete electrical solutions for commercial and residential properties."
-                      imageSrc="/service-electrical.jpg"
+                      imageSrc="/images/electrical.jpg"
                     />
                     <ServiceItem
                       icon={<Wifi className="w-5 h-5 text-[#FF4D4D]" />}
                       title="Networking Solutions"
                       description="Advanced networking infrastructure for seamless connectivity."
-                      imageSrc="/service-networking.jpg"
+                      imageSrc="/images/network.jpg"
                     />
                     <ServiceItem
                       icon={<Shield className="w-5 h-5 text-[#FF4D4D]" />}
                       title="Digital Security Systems"
                       description="Comprehensive security solutions to protect your assets."
-                      imageSrc="/service-security.jpg"
+                      imageSrc="/images/security.jpg"
+                    />
+                    <ServiceItem
+                      icon={<Zap className="w-5 h-5 text-[#FF4D4D]" />}
+                      title="Home Automation"
+                      description="Smart home solutions for comfort, convenience, and energy efficiency."
+                      imageSrc="/images/automation.jpg"
                     />
                   </div>
                 </motion.div>
@@ -395,13 +413,13 @@ export default function VisitingCard() {
                   <div className="mt-6">
                     <h4 className="text-sm font-medium mb-3 text-white/70">Trusted By</h4>
                     <div className="flex flex-wrap justify-center gap-4">
-                      {[1, 2, 3, 4, 5, 6, 7].map((i) => (
-                        <div key={i} className="bg-white p-2 rounded-md w-20 h-20 flex items-center justify-center">
+                      {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((i) => (
+                        <div key={i} className="bg-white p-2 rounded-md w-20 h-20 flex items-center justify-center hover:scale-110 transition-transform">
                           <Image
                             src={`/client-${i}.png`}
                             alt={`Client ${i}`}
-                            width={60}
-                            height={60}
+                            width={70}
+                            height={70}
                             className="object-contain hover:scale-110 transition-transform"
                           />
                         </div>
@@ -554,12 +572,12 @@ function ServiceItem({ icon, title, description, imageSrc }: ServiceItemProps) {
 
   return (
     <motion.div
-      className="flex flex-col md:flex-row gap-4 bg-white/5 p-3 rounded-lg hover:bg-white/10 transition-colors"
+      className="flex flex-col md:flex-row gap-4 bg-white/5 p-3 rounded-xl hover:bg-white/10 transition-colors"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       whileHover={{ y: -5 }}
     >
-      <div className="relative w-full md:w-24 h-24 rounded-md overflow-hidden">
+      <div className="relative w-full md:w-24 h-24 rounded-xl overflow-hidden">
         <Image
           src={imageSrc || "/placeholder.svg"}
           alt={title}
