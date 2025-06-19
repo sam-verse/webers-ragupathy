@@ -1168,6 +1168,11 @@ video {
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
+.space-y-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1177,11 +1182,6 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
-}
-.space-y-3 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
 }
 .overflow-auto {
   overflow: auto;
@@ -1375,6 +1375,40 @@ video {
 .bg-white\/5 {
   background-color: rgb(255 255 255 / 0.05);
 }
+.bg-\[\#FFFF\] {
+  background-color: #FFFF;
+}
+.bg-\[\#FF\] {
+  background-color: #FF;
+}
+.bg-\[\] {
+  background-color: ;
+}
+.bg-\[\#\] {
+  background-color: #;
+}
+.bg-\[\#FF12\] {
+  background-color: #FF12;
+}
+.bg-\[\#\#333085\] {
+  background-color: ##333085;
+}
+.bg-\[\#333085\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 48 133 / var(--tw-bg-opacity, 1));
+}
+.bg-\[\#0a1d38\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(10 29 56 / var(--tw-bg-opacity, 1));
+}
+.bg-\[\#021d38\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(2 29 56 / var(--tw-bg-opacity, 1));
+}
+.bg-\[\#051d38\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(5 29 56 / var(--tw-bg-opacity, 1));
+}
 .bg-gradient-to-br {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
@@ -1425,29 +1459,8 @@ video {
 .object-cover {
   object-fit: cover;
 }
-.object-\[60\%_center\] {
-  object-position: 60% center;
-}
-.object-\[\%_center\] {
-  object-position: % center;
-}
-.object-\[70\%_center\] {
-  object-position: 70% center;
-}
 .object-\[90\%_center\] {
   object-position: 90% center;
-}
-.object-\[0\%_center\] {
-  object-position: 0% center;
-}
-.object-\[100\%_center\] {
-  object-position: 100% center;
-}
-.object-\[-10\%_center\] {
-  object-position: -10% center;
-}
-.object-\[10\%_center\] {
-  object-position: 10% center;
 }
 .p-0 {
   padding: 0px;

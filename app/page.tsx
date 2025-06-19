@@ -238,10 +238,16 @@ export default function VisitingCard() {
                 initial={{ scale: 0, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ delay: 0.9, type: "spring", stiffness: 200 }}
-                className="absolute top-4 right-4 bg-[#FF4D4D] text-white text-xs font-bold px-3 py-1 rounded-full flex items-center"
+                className="absolute top-4 right-4 bg-[#051d38] text-white text-xs font-bold px-3 py-1 rounded-full flex items-center"
               >
-                <Clock className="w-3 h-3 mr-1" />
-                11 Years
+                <Image
+                  src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg"
+                  alt="Indian Flag"
+                  width={35}
+                  height={25}
+                  className="rounded-sm mr-1"
+                />
+
               </motion.div>
             </div>
           </div>
@@ -324,6 +330,10 @@ export default function VisitingCard() {
                       <CheckCircle className="w-5 h-5" />
                       <span className="text-sm font-semibold">BIS & NEC Standards Compliant Products</span>
                     </div>
+                    <div className="flex items-center gap-2 text-[#FF4D4D]">
+                      <MapPin className="w-5 h-5" />
+                      <span className="text-sm font-semibold">KOLATHUR CHENNAI TAMILNADU INDIA</span>
+                    </div> 
                   </div>
                 </motion.div>
               )}
