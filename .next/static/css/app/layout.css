@@ -1304,6 +1304,10 @@ video {
 .border-t-transparent {
   border-top-color: transparent;
 }
+.bg-\[\#051d38\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(5 29 56 / var(--tw-bg-opacity, 1));
+}
 .bg-\[\#0A1D37\]\/80 {
   background-color: rgb(10 29 55 / 0.8);
 }
@@ -1374,40 +1378,6 @@ video {
 }
 .bg-white\/5 {
   background-color: rgb(255 255 255 / 0.05);
-}
-.bg-\[\#FFFF\] {
-  background-color: #FFFF;
-}
-.bg-\[\#FF\] {
-  background-color: #FF;
-}
-.bg-\[\] {
-  background-color: ;
-}
-.bg-\[\#\] {
-  background-color: #;
-}
-.bg-\[\#FF12\] {
-  background-color: #FF12;
-}
-.bg-\[\#\#333085\] {
-  background-color: ##333085;
-}
-.bg-\[\#333085\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(51 48 133 / var(--tw-bg-opacity, 1));
-}
-.bg-\[\#0a1d38\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(10 29 56 / var(--tw-bg-opacity, 1));
-}
-.bg-\[\#021d38\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(2 29 56 / var(--tw-bg-opacity, 1));
-}
-.bg-\[\#051d38\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(5 29 56 / var(--tw-bg-opacity, 1));
 }
 .bg-gradient-to-br {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
