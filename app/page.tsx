@@ -629,4 +629,4 @@ function StatCard({ icon, value, label, suffix = "" }: StatCardProps) {
       <div className="text-xs text-white/70 relative z-10">{label}</div>
     </motion.div>
   )
-}
+} 
